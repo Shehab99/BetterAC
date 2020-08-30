@@ -13,10 +13,10 @@ language: eng
 
 # Select whether to use modules or not:
 anti_autoclicker: true
-anti_spam: true
+anti_spam: false
 anti_speed: false #not working yet
-anti_noclip: true
-anti_reach: true
+anti_noclip: false
+anti_reach: false
 anti_killaura: false #not secure, may includes some issues
 anti_instabreak: true
 # WARNING: This module is under active development but is not 100% working! Please do NOT enable this module on public accessable servers
@@ -55,7 +55,7 @@ max_warns: 4
 # And finally, set an action to punish player.
 # Therefore, you should just enter a valid command
 # use {playername} to replace it with the player's name
-punish_commands: ["ban {playername} hacking", "say {playername} got punished for hacking!"]
+punish_commands: ["kick {playername} hacking", "say {playername} got punished for hacking!"]
 
 # only change this values if 'anti_spam' is enabled above
 
@@ -63,9 +63,9 @@ punish_commands: ["ban {playername} hacking", "say {playername} got punished for
 spam_cooldown: 3
 
 # set max clicks for certain devices:
-autoclicker_pc: 35
-autoclicker_mobile: 15
-autoclicker_console: 25
+autoclicker_pc: 10
+autoclicker_mobile: 10
+autoclicker_console: 10
 
 # set max range for devices
 # NOTE: Default values should be correct
@@ -83,5 +83,5 @@ xray_levels: ["world", "test"]
 
 # usable modules: speed, noclip, reach, killaura, autoclicker, spam, instabreak
 # add them in the list if you want to warn the player for it
-warned_modules: ["speed", "reach", "killaura", "autoclicker", "instabreak"]
+warned_modules: ["reach", "killaura", "instabreak"]
 ...
